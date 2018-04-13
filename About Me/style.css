@@ -1,20 +1,27 @@
-.slideshowContainter {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+
+.slideshowContainer {
+    box-sizing: border-box;
     max-width: 1000px;
-    position: absolute;
+    position: relative;
     margin: auto;
 }
 
 .myPics {
-    display: inline-block;
+    display: none;
+    max-height: 480px;
+    max-width: 640px;
 }
 
 /* caption text */
-.text {
-    color: white;
+.caption {
+    color: black;
+    background-color: gray;
     font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
+    position: relative;
     width: 100%;
     text-align: center;
 }
@@ -22,26 +29,12 @@
 /* slide numbers */
 .numberText {
     color: black;
+    background-color: white;
+    font-weight: bold;
     font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* dots and bullets */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: lightgray;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: gray;
+    position: relative;
+    float: right;
+    border-radius: 40%;
 }
 
 /* fading animation */
